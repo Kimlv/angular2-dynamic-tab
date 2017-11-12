@@ -1,0 +1,14 @@
+<h1>Dynamic Tab Demo</h1>
+<div class="option">
+    <span>Select new tab</span>
+    <select [value]="selectedValue" (change)="onSelectChange($event.target.value)">
+        <option value="Tab1">Tab 1</option>
+        <option value="Tab2">Tab 2</option>
+        <option value="Tab3">Tab 3</option>
+    </select>
+    <span>Name</span>    
+    <input type="text" [value]="newTabName" (change)="newTabName = $event.target.value" />
+    <button (click)="add()">Add</button>
+    <button (click)="remove()">Remove</button>
+</div>
+<app-dynamic-tab #tab [children]="tabPages"></app-dynamic-tab>

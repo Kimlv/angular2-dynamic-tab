@@ -1,0 +1,33 @@
+/* Style the tab content */
+div.tab-content {    
+    padding: 4px 4px;
+    margin: 0px 2px 2px 2px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+ul {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 2px 2px 0px 2px;
+    padding: 1px 1px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;  
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+/* Change background color of buttons on hover */
+li:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+li.active {
+    background-color: #ccc;
+}
